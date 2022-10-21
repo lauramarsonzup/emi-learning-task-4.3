@@ -66,14 +66,20 @@
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                     <color key="baseBackgroundColor" name="BlueMarguerite"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zr7-TP-cdN"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk6-qe-tpA">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk6-qe-tpA" userLabel="ForgotPassword Button">
                                                 <rect key="frame" x="0.0" y="72" width="286" height="31"/>
                                                 <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Esqueceu a senha?">
                                                     <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="14"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotPasswordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5po-WC-l8K"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -95,6 +101,10 @@
                             <constraint firstItem="gzl-wN-r2f" firstAttribute="leading" secondItem="ees-Ju-7k9" secondAttribute="leading" constant="32" id="qud-ZF-ADT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="9Zh-Mf-Ekf" id="bSR-Fr-fST"/>
+                        <outlet property="passwordTextField" destination="60M-U2-k9m" id="MFI-70-DrW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
